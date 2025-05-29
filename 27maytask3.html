@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>Task List</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+            font-family: Arial, sans-serif;
+        }
+
+        .task-header {
+            background-color: #4a7c3c;
+            color: white;
+            padding: 15px 25px;
+            margin-bottom: 40px;
+            position: relative;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .task-header::after {
+            content: '';
+            position: absolute;
+            right:20px;
+            top: 0;
+            width: 0;
+            height: 0;
+            border-left: 20px solid #4a7c3c;
+            border-top: 25px solid transparent;
+            border-bottom: 25px solid transparent;
+        }
+
+        .task-list {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .task-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            font-size: 24px;
+            color: #666;
+        }
+
+        .star {
+            color: #e74c3c;
+            margin-right: 15px;
+            font-size: 20px;
+        }
+
+       
+    </style>
+</head>
+<body>
+    <div class="task-header">
+        Task
+    </div>
+
+    <div class="task-list">
+        <div class="task-item">
+            <span class="star">★</span>
+            <span>Hummus</span>
+        </div>
+        
+        <div class="task-item">
+            <span class="star">★</span>
+            <span>Pita</span>
+        </div>
+        
+        <div class="task-item">
+            <span class="star">★</span>
+            <span>Green salad</span>
+        </div>
+        
+        <div class="task-item">
+            <span class="star">★</span>
+            <span>Halloumi</span>
+        </div>
+    </div>
+</body>
+</html>
